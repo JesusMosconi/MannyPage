@@ -1,0 +1,2 @@
+import type { Profesor } from "@/tipos";
+export const profesor: Profesor = { nombre: "Manny", bio: "Llevo más de 10 años ayudando a personas reales a transformar su cuerpo y su mentalidad. Mi método combina entrenamiento inteligente, nutrición sostenible y la disciplina necesaria para lograr resultados que duren.", certificaciones: ["ENTRENADOR PERSONAL CERTIFICADO", "ESPECIALISTA EN NUTRICIÓN DEPORTIVA", "PREPARADOR DE FUERZA Y ACONDICIONAMIENTO"] };
