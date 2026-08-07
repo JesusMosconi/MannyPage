@@ -18,7 +18,7 @@ export function Encabezado() {
       <nav className="hidden items-center gap-8 md:flex" aria-label="Navegación principal">
         {enlaces.map((enlace) => <a key={enlace.texto} className="text-sm font-bold text-texto-secundario hover:text-primario" href={enlace.href}>{enlace.texto}</a>)}
       </nav>
-      <a href="#contacto" className="boton boton-primario hidden md:inline-flex">EMPEZAR AHORA</a>
+      <a href="#contacto" className="boton boton-primario !hidden md:!inline-flex">EMPEZAR AHORA</a>
       <button
         type="button"
         className="text-primario md:hidden"
