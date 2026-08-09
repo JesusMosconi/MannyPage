@@ -1,6 +1,47 @@
 import type { Plan } from "@/tipos";
+
 export const planes: Plan[] = [
- {id:"inicio",nombre:"INICIO",descripcion:"Para empezar a moverte con un plan claro.",precio:49,moneda:"USD",destacado:false,caracteristicas:[{texto:"Rutina personalizada",incluido:true},{texto:"Seguimiento mensual",incluido:true},{texto:"Guía nutricional",incluido:false},{texto:"Soporte por WhatsApp",incluido:false}]},
- {id:"transformacion",nombre:"TRANSFORMACIÓN",descripcion:"Acompañamiento completo para cambiar de verdad.",precio:89,moneda:"USD",destacado:true,caracteristicas:[{texto:"Rutina personalizada",incluido:true},{texto:"Seguimiento semanal",incluido:true},{texto:"Guía nutricional",incluido:true},{texto:"Soporte por WhatsApp",incluido:true}]},
- {id:"elite",nombre:"ÉLITE",descripcion:"Atención uno a uno y máximo rendimiento.",precio:149,moneda:"USD",destacado:false,caracteristicas:[{texto:"Todo lo de Transformación",incluido:true},{texto:"Videollamada semanal",incluido:true},{texto:"Ajustes ilimitados",incluido:true},{texto:"Prioridad 24/7",incluido:true}]}
+  {
+    id: "reto-21-dias",
+    nombre: "RETO 21 DÍAS",
+    subtitulo: "Entrenamiento grupal guiado",
+    descripcion: "Creá el hábito de entrenar por solo",
+    precio: 30000,
+    moneda: "ARS",
+    caracteristicas: [],
+    destacado: false,
+    permiteGuiaAvanzada: true,
+  },
+  {
+    id: "plan-inicial",
+    nombre: "PLAN INICIAL",
+    descripcion: "1 MES",
+    precio: 65000,
+    moneda: "ARS",
+    mostrarMoneda: true,
+    caracteristicas: [
+      { texto: "Rutina 100% personalizada 1-1 conmigo", incluido: true },
+      { texto: "Videos explicativos", incluido: true },
+      { texto: "Guía nutricional básica", incluido: true },
+      { texto: "Seguimiento por WhatsApp", incluido: true },
+    ],
+    destacado: false,
+  },
+  {
+    id: "plan-macrociclo",
+    nombre: "PLAN MACROCICLO",
+    descripcion: "12 SEMANAS",
+    precio: 55000,
+    precioSufijo: "/mes",
+    total: 165000,
+    precioAnterior: 195000,
+    moneda: "ARS",
+    caracteristicas: [
+      { texto: "Rutina 100% personalizada 1-1 conmigo por macrociclo", incluido: true },
+      { texto: "Videos + corrección técnica", incluido: true },
+      { texto: "Guía nutricional completa", incluido: true },
+      { texto: "Seguimiento premium", incluido: true },
+    ],
+    destacado: true,
+  },
 ];

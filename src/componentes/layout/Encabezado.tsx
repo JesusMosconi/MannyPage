@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -14,7 +15,17 @@ export function Encabezado() {
 
   return <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-fondo/85 backdrop-blur-xl">
     <div className="contenedor flex h-20 items-center justify-between">
-      <a href="#inicio" className="font-titulos text-3xl tracking-wider text-primario">IRON COACH</a>
+      <a href="#inicio" className="flex items-center gap-2 font-titulos text-3xl tracking-wider text-primario">
+        <Image
+          src="/imagenes/Logo-Manny.png"
+          alt="Logo de FerBertero Coach"
+          width={48}
+          height={48}
+          className="size-12 shrink-0 object-contain"
+          priority
+        />
+        <span>FerBertero Coach</span>
+      </a>
       <nav className="hidden items-center gap-8 md:flex" aria-label="Navegación principal">
         {enlaces.map((enlace) => <a key={enlace.texto} className="text-sm font-bold text-texto-secundario hover:text-primario" href={enlace.href}>{enlace.texto}</a>)}
       </nav>
