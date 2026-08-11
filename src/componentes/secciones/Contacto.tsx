@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail } from "lucide-react";
 import { IconoWhatsapp } from "@/componentes/ui/IconoWhatsapp";
 import { generarLinkWhatsApp } from "@/lib/whatsapp";
@@ -43,10 +44,12 @@ export function Contacto() {
         </div>
 
         <div className="relative h-100 overflow-hidden rounded-tarjeta md:h-150">
-          <img
+          <Image
             src="/imagenes/entrenador-contacto.jpg"
             alt="Entrenador personal en el gimnasio"
-            className="h-full w-full object-cover"
+            fill
+            className="object-cover"
+            sizes="(min-width:768px) 50vw, 100vw"
           />
           <div
             className="pointer-events-none absolute inset-0 bg-gradient-to-r from-superficie via-superficie/25 to-transparent"

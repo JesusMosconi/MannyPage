@@ -17,9 +17,13 @@ export interface Plan {
 export interface Testimonio {
   id: string;
   nombre: string;
-  foto: string;
-  calificacion: number;
+  usuario: string;
+  linkUsuario?: string;
+  foto?: string;
   comentario: string;
+  resultado?:
+    | { tipo: "foto"; imagen: string }
+    | { tipo: "antes-despues"; antes: string; despues: string };
 }
 
 export interface Profesor {

@@ -10,7 +10,7 @@ export function SobreMi() {
       <div className="contenedor grid items-center gap-12 md:grid-cols-2 md:gap-20">
         <div className="relative min-h-130 overflow-hidden rounded-tarjeta">
           <Image
-            src="/imagenes/sobre-mi-entrenador.png"
+            src="/imagenes/sobre-mi-entrenador.avif"
             alt={`${profesor.nombre}, entrenador personal`}
             fill
             className="object-cover grayscale transition duration-700 hover:grayscale-0"
