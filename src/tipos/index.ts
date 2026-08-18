@@ -21,6 +21,7 @@ export interface Testimonio {
   linkUsuario?: string;
   foto?: string;
   comentario: string;
+  posicionImagen?: "top" | "center" | "bottom";
   resultado?:
     | { tipo: "foto"; imagen: string }
     | { tipo: "antes-despues"; antes: string; despues: string };
